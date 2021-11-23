@@ -11,17 +11,24 @@ def pick_word():
 # make a list of underscores of current word's length
 current_word = "TEST"
 show_word = list(len(current_word)*"_")
-print(show_word)
 current_lives = 6  # number of lives
 match_won = False
 
 
 while match_won == False and current_lives > 0: #  game loop boolean
+    print(show_word)
     user_guess = input("Pick a letter (or word if you're feeling lucky) and guess the hidden word:") # ask user for guess input
     user_guess = user_guess.upper()  # method to convert string to upper
     
     if user_guess == current_word: # conditional in case user gets the current word right
         match_won = True
+    if len(user_guess) == 1 and user_guess in current_word: # implement single letter guess
+        for i in range(0, len(current_word)):
+            letter = current_word[i]
+            if user_guess == letter:
+                show_word[i] = user_guess
+        if "_" not in show_word:
+            match_won = True
     else:
         current_lives -= 1 #  subtract one from current lives
 
