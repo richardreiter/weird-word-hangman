@@ -12,3 +12,10 @@ def pick_word():
 current_word = "TEST"
 show_word = list(len(current_word)*"_")
 print(show_word)
+current_lives = 6  # number of lives
+match_won = False
+
+
+while match_won == False: #  game loop boolean
+    user_guess = input("Pick a letter and guess the hidden word! :)") # ask user for guess input
+    user_guess = user.upper()  # method to convert string to upper
