@@ -17,5 +17,13 @@ match_won = False
 
 
 while match_won == False: #  game loop boolean
-    user_guess = input("Pick a letter and guess the hidden word! :)") # ask user for guess input
-    user_guess = user.upper()  # method to convert string to upper
+    user_guess = input("Pick a letter (or word if you're feeling lucky) and guess the hidden word:") # ask user for guess input
+    user_guess = user_guess.upper()  # method to convert string to upper
+    
+    if user_guess == current_word: # conditional in case user gets the current word right
+        match_won = True
+
+if match_won:
+    print("Nice one! You guessed the weird word :-O")
+else:
+    print(f"The man has been hang :(, the hidden word is {current_word}")
