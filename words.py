@@ -1,4 +1,7 @@
-# Randomly generated weird words list, many thanks to https://randomwordgenerator.com/weird-word.php
+"""Randomly generated weird words list
+many thanks to https://randomwordgenerator.com/weird-word.php
+"""
+
 weird_words = [
     'solferino',
     'pullet',
