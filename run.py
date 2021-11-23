@@ -16,14 +16,16 @@ current_lives = 6  # number of lives
 match_won = False
 
 
-while match_won == False: #  game loop boolean
+while match_won == False and current_lives > 0: #  game loop boolean
     user_guess = input("Pick a letter (or word if you're feeling lucky) and guess the hidden word:") # ask user for guess input
     user_guess = user_guess.upper()  # method to convert string to upper
     
     if user_guess == current_word: # conditional in case user gets the current word right
         match_won = True
+    else:
+        current_lives -= 1 #  subtract one from current lives
 
 if match_won:
     print("Nice one! You guessed the weird word :-O")
 else:
-    print(f"The man has been hang :(, the hidden word is {current_word}")
+    print(f"The man has been hung :(, the hidden word was actually {current_word}")
