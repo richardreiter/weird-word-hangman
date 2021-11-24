@@ -38,12 +38,14 @@ while match_won is False and current_lives > 0:  # game loop boolean
     user_guess = user_guess.upper()  # method to convert string to upper
 
     if user_guess == current_word:  # conditional in case user gets the current word right
-        match_won is True
+        match_won = True
+        show_word = current_word
     if len(user_guess) == 1 and user_guess in current_word:  # implement single letter guess
         for i in range(0, len(current_word)):
             match_won = check_user_guess(user_guess, current_word)
     else:
         current_lives -= 1  # subtract one from current lives
+        game_status()
 
 if match_won:
     print("Nice one! You guessed the weird word =-O")
