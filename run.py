@@ -33,7 +33,7 @@ def check_user_guess(letter, current_word):
 def game_status():  # function to help represent games current status
     os.system("clear")
     print(hanging_man[6-current_lives])
-    print(show_word)
+    print(" ".join([str(i) for i in show_word]))  # converts each list element into a string
     print("You've got", current_lives, "lives")  # prints how many lives the user currently has left
 
 
