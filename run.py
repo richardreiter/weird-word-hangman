@@ -15,24 +15,33 @@ current_lives = 6  # number of lives
 match_won = False
 
 
+# function to check user guess and reveal correct letters
+def check_user_guess(letter, current_word):
+    global show_word
+    for i in range(0, len(current_word)):
+        letter = current_word[i]
+        if user_guess == letter:
+            show_word[i] = user_guess
+    if "_" not in show_word:
+        return True  # function returns true if user wins
+    else:
+        return False  # else returns false
+
+
 while match_won is False and current_lives > 0:  # game loop boolean
     print(show_word)
     user_guess = input("Pick a letter (or word if you're feeling lucky) and guess the hidden word:")  # ask user for guess input
     user_guess = user_guess.upper()  # method to convert string to upper
 
     if user_guess == current_word:  # conditional in case user gets the current word right
-        match_won = True
+        match_won is True
     if len(user_guess) == 1 and user_guess in current_word:  # implement single letter guess
         for i in range(0, len(current_word)):
-            letter = current_word[i]
-            if user_guess == letter:
-                show_word[i] = user_guess
-        if "_" not in show_word:
-            match_won = True
+            match_won = check_user_guess(user_guess, current_word)
     else:
         current_lives -= 1  # subtract one from current lives
 
 if match_won:
-    print("Nice one! You guessed the weird word :-O")
+    print("Nice one! You guessed the weird word =-O")
 else:
-    print(f"The man has been hung :(, the hidden word was actually {current_word}")
+    print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {current_word}")
