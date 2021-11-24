@@ -34,6 +34,7 @@ def game_status():  # function to help represent games current status
     os.system("clear")
     print(hanging_man[6-current_lives])
     print(show_word)
+    print("You've got", current_lives, "lives")  # prints how many lives the user currently has left
 
 
 while match_won is False and current_lives > 0:  # game loop boolean
