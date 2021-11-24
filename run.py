@@ -28,8 +28,12 @@ def check_user_guess(letter, current_word):
         return False  # else returns false
 
 
-while match_won is False and current_lives > 0:  # game loop boolean
+def game_status():  # function to help represent games current status
     print(show_word)
+
+
+while match_won is False and current_lives > 0:  # game loop boolean
+    game_status()
     user_guess = input("Pick a letter (or word if you're feeling lucky) and guess the hidden word:")  # ask user for guess input
     user_guess = user_guess.upper()  # method to convert string to upper
 
