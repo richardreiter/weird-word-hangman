@@ -1,4 +1,5 @@
 import random  # imports random library to pick a word randomly
+import os  # imports os library so it can be used to help clear the screen
 from words import weird_words  # imports weird word list from words.py file
 from images import hanging_man  # imports hanging man dictionary from images.py file
 
@@ -30,6 +31,7 @@ def check_user_guess(letter, current_word):
 
 
 def game_status():  # function to help represent games current status
+    os.system("clear")
     print(hanging_man[6-current_lives])
     print(show_word)
 
