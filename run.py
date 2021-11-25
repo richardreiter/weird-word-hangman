@@ -20,7 +20,25 @@ def play_game(actual_word):
     print(show_hangman(user_tries))
     print(word_reveal)
     print("\n")
+    while not user_guessed and user_tries > 0:
+        user_guess = input("Please guess a word or letter: ").upper()
+        if len(user_guess) == 1 and guess.isalpha():
+            if user_guess in user_guessed_letters:
+                print("Sorry, but you've actually already guessed this letter!", user_guess)
+            elif user_guess not in actual_word:
+                print(user_guess, "is actually not in the word. :(")
+                user_tries -= 1
+                user_guessed_letters.append(user_guess)
+            else:
+                print("Nice one! ", user_guess, "is in the actual word!")
 
+
+        elif len(user_guess) == len(actual_word) and user_guess.isalpha():
+        
+        else:
+            print("Sorry, this guess was invalid, please try again! :)")
+        print(show_hangman(user_tries))
+        print(word_reveal)
 
 
 # function to check user guess and reveal correct letters
