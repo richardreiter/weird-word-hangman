@@ -10,11 +10,17 @@ def pick_word():
     return actual_word.upper()
 
 
-# make a list of underscores of current word's length
-current_word = "TEST"
-show_word = list(len(current_word)*"_")
-current_lives = 6  # number of lives
-match_won = False
+def play_game(actual_word):
+    word_reveal = "_" * len(actual_word)
+    user_guessed = False
+    user_guessed_letters = []
+    user_guessed_words = []
+    user_tries = 6
+    print("This is Only Weird Words Hangman, welcome amigo!")
+    print(show_hangman(user_tries))
+    print(word_reveal)
+    print("\n")
+
 
 
 # function to check user guess and reveal correct letters
