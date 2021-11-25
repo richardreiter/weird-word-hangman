@@ -54,6 +54,7 @@ def play_game(actual_word):
             print("\n")
     if user_guessed is True:
         print("Nice one! You guessed the weird word =-O")
+    else:
         print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {actual_word}")
 
 
@@ -124,3 +125,14 @@ def show_hangman(user_tries):
                 """
     ]
     return status[user_tries]
+
+def main():
+    actual_word = pick_word()
+    play_game(actual_word)
+    while input("Would you like to play again? (Y/N) ").upper() == "Y":
+        actual_word = pick_word()
+        play_game(actual_word)
+
+
+if __name__ == "__main__":
+    main()
