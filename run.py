@@ -1,7 +1,5 @@
 import random  # imports random library to pick a word randomly
-import os  # imports os library so it can be used to help clear the screen
 from words import weird_words  # imports weird word list from words.py file
-from images import hanging_man  # imports hanging man dictionary from images.py file
 
 
 # function to randomly choose a word from weird words list
@@ -22,7 +20,7 @@ def play_game(actual_word):
     print("\n")
     while not user_guessed and user_tries > 0:
         user_guess = input("Please guess a word or letter: ").upper()
-        if len(user_guess) == 1 and guess.isalpha():
+        if len(user_guess) == 1 and user_guess.isalpha():
             if user_guess in user_guessed_letters:
                 print("Sorry, but you've actually already guessed this letter!", user_guess)
             elif user_guess not in actual_word:
@@ -32,16 +30,16 @@ def play_game(actual_word):
             else:
                 print("Nice one! ", user_guess, "is in the actual word!")
                 user_guessed_letters.append(user_guess)
-                actual_word_as_list = list(word_reveal)
-                indexes = [i for i, letter in e(user_guess) if letter == user_guess]
+                guessed_word_as_list = list(word_reveal)
+                indexes = [i for i, letter in enumerate(user_guess) if letter == user_guess]
                 for index in indexes:
                     guessed_word_as_list[index] = user_guess
-                    word_reveal = "".join(actual_word_as_list)
+                    word_reveal = "".join(guessed_word_as_list)
                 if "_" not in word_reveal:
                     user_guessed = True
         elif len(user_guess) == len(actual_word) and user_guess.isalpha():
             if user_guess in user_guessed_words:
-                print("You've actually already guessed the word!", guess)
+                print("You've actually already guessed the word!", user_guess)
             elif user_guess != actual_word:
                 print(user_guess, "isn't the word I'm afraid :/")
                 user_tries -= 1
@@ -58,43 +56,3 @@ def play_game(actual_word):
         print("Nice one! You guessed the weird word =-O")
         print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {actual_word}")
 
-
-# function to check user guess and reveal correct letters
-def check_user_guess(letter, current_word):
-    global show_word
-    for i in range(0, len(current_word)):
-        letter = current_word[i]
-        if user_guess == letter:
-            show_word[i] = user_guess
-    if "_" not in show_word:
-        return True  # function returns true if user wins
-    else:
-        return False  # else returns false
-
-
-def game_status():  # function to help represent games current status
-    os.system("clear")
-    print(hanging_man[6-current_lives])
-    print(" ".join([str(i) for i in show_word]))  # converts each list element into a string
-    print("You've got", current_lives, "lives")  # prints how many lives the user currently has left
-
-
-while match_won is False and current_lives > 0:  # game loop boolean
-    game_status()
-    user_guess = input("Pick a letter (or word if you're feeling lucky) and guess the hidden word:")  # ask user for guess input
-    user_guess = user_guess.upper()  # method to convert string to upper
-
-    if user_guess == current_word:  # conditional in case user gets the current word right
-        match_won = True
-        show_word = current_word
-    if len(user_guess) == 1 and user_guess in current_word:  # implement single letter guess
-        for i in range(0, len(current_word)):
-            match_won = check_user_guess(user_guess, current_word)
-    else:
-        current_lives -= 1  # subtract one from current lives
-        game_status()
-
-if match_won:
-    print("Nice one! You guessed the weird word =-O")
-else:
-    print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {current_word}")
