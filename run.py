@@ -34,12 +34,25 @@ def play_game(actual_word):
                 user_guessed_letters.append(user_guess)
                 actual_word_as_list = list(word_reveal)
                 indexes = [i for i, letter in e(user_guess) if letter == user_guess]
+                for index in indexes:
+                    guessed_word_as_list[index] = user_guess
+                    word_reveal = "".join(actual_word_as_list)
+                if "_" not in word_reveal:
+                    user_guessed = True
         elif len(user_guess) == len(actual_word) and user_guess.isalpha():
-            
+            if user_guess in user_guessed_words:
+                print("You've actually already guessed the word!", guess)
+            elif user_guess != actual_word:
+                print(user_guess, "isn't the word I'm afraid :/")
+                user_tries -= 1
+                user_guessed_words.append(user_guess)
+            else:
+                user_guessed = True
+                word_reveal = actual_word
         else:
-        print("Sorry, this guess was invalid, please try again! :)")
-        print(show_hangman(user_tries))
-        print(word_reveal)
+            print("Sorry, this guess was invalid, please try again! :)")
+            print(show_hangman(user_tries))
+            print(word_reveal)
 
 
 # function to check user guess and reveal correct letters
