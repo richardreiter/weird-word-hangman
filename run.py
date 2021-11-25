@@ -53,6 +53,10 @@ def play_game(actual_word):
             print("Sorry, this guess was invalid, please try again! :)")
             print(show_hangman(user_tries))
             print(word_reveal)
+            print("\n")
+    if user_guessed is True:
+        print("Nice one! You guessed the weird word =-O")
+        print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {actual_word}")
 
 
 # function to check user guess and reveal correct letters
