@@ -31,12 +31,13 @@ def play_game(actual_word):
                 user_guessed_letters.append(user_guess)
             else:
                 print("Nice one! ", user_guess, "is in the actual word!")
-
-
+                user_guessed_letters.append(user_guess)
+                actual_word_as_list = list(word_reveal)
+                indexes = [i for i, letter in e(user_guess) if letter == user_guess]
         elif len(user_guess) == len(actual_word) and user_guess.isalpha():
-        
+            
         else:
-            print("Sorry, this guess was invalid, please try again! :)")
+        print("Sorry, this guess was invalid, please try again! :)")
         print(show_hangman(user_tries))
         print(word_reveal)
 
