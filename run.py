@@ -1,5 +1,5 @@
 import random  # imports random library to pick a word randomly
-from words import weird_words  # imports weird word list from words.py file
+from words import weird_words, welcome_banner  # imports weird word list from words.py file
 
 
 # function to randomly choose a word from weird words list
@@ -14,7 +14,17 @@ def play_game(actual_word):
     user_guessed_letters = []
     user_guessed_words = []
     user_tries = 6
-    print("This is Only Weird Words Hangman, welcome amigo!")
+    print(welcome_banner)
+    print("-------------------------------------------------- ")
+    print("-------------------------------------------------- ")
+    print("This is Weird Word Hangman.")
+    print("Your mission (should you wish to accept it)")
+    print("is to try and guess the weird word!")
+    print("Each underscore corresponds to a hidden letter.")
+    print("If you input a correct guess, it will replace the underscore.")
+    print("You have 6 lives. Go! Don't leave the man hanging!")
+    print("-------------------------------------------------- ")
+    print("-------------------------------------------------- ")
     print(show_hangman(user_tries))
     print(word_reveal)
     print("\n")
