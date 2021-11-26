@@ -31,7 +31,7 @@ def play_game(actual_word):
                 print("Nice one! ", user_guess, "is in the actual word!")
                 user_guessed_letters.append(user_guess)
                 guessed_word_as_list = list(word_reveal)
-                indexes = [i for i, letter in enumerate(user_guess) if letter == user_guess]
+                indexes = [i for i, letter in enumerate(actual_word) if letter == user_guess]
                 for index in indexes:
                     guessed_word_as_list[index] = user_guess
                 word_reveal = "".join(guessed_word_as_list)
@@ -125,6 +125,7 @@ def show_hangman(user_tries):
                 """
     ]
     return status[user_tries]
+
 
 def main():
     actual_word = pick_word()
