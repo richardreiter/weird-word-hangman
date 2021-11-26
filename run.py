@@ -1,5 +1,5 @@
 import random  # imports random library to pick a word randomly
-from words import weird_words, welcome_banner  # imports weird word list from words.py file
+from words import weird_words, welcome_banner  # imports weird word list and welcome_banner from words.py file
 
 
 # function to randomly choose a word from weird words list
@@ -99,7 +99,7 @@ def show_hangman(user_tries):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
+                   |     /
                    -
                 """,
                 """
@@ -108,7 +108,7 @@ def show_hangman(user_tries):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |
                    -
                 """,
                 """
@@ -117,7 +117,7 @@ def show_hangman(user_tries):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 """,
                 """
@@ -126,25 +126,25 @@ def show_hangman(user_tries):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 """,
                 """
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 """,
                 """
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 """
     ]
