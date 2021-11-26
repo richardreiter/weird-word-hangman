@@ -31,7 +31,7 @@ def play_game(actual_word):
         user_name = input("What is your name? \n")
         if all(char in chars for char in user_name):
             break
-        print("I'm sorry, this name is not valid! Please use only letters. \n")
+        print("I'm sorry, this name is not valid! Please use only alphabet letters. \n")
     print("\n")
     print("Hi", user_name, "best of luck! \n")
     print("---------------------------------------------------")
@@ -41,7 +41,8 @@ def play_game(actual_word):
     print(word_reveal)
     print("\n")
     while not user_guessed and user_tries > 0:
-        user_guess = input("Please guess a word or letter: ").upper()
+        user_guess = input("Please guess a word or letter:").upper()
+        print("--------------------------------------------------- \n")
         if len(user_guess) == 1 and user_guess.isalpha():
             if user_guess in user_guessed_letters:
                 print("Sorry, but you've actually already guessed this letter!", user_guess)
@@ -72,6 +73,7 @@ def play_game(actual_word):
         else:
             print("Sorry, this guess was invalid, please try again! :)")
         print(show_hangman(user_tries))
+        print(f"{user_tries}, lives remaining")
         print(word_reveal)
         print("\n")
     if user_guessed:
