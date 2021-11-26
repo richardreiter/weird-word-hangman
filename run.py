@@ -2,6 +2,12 @@ import random  # imports random library to pick a word randomly
 # imports weird word list and welcome_banner from words.py file
 from words import weird_words, welcome_banner
 
+"""
+Many thanks to Kite for a great reference and example:
+https://www.youtube.com/watch?v=m4nEnsavl6w
+https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python
+"""
+
 
 # function to randomly choose a word from weird words list
 def pick_word():
@@ -10,6 +16,13 @@ def pick_word():
     """
     actual_word = random.choice(weird_words)
     return actual_word.upper()  # convert word to uppercase
+
+
+"""
+Many thanks to Kite for a great reference and example:
+https://www.youtube.com/watch?v=m4nEnsavl6w
+https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python
+"""
 
 
 def play_game(actual_word):
@@ -45,7 +58,8 @@ def play_game(actual_word):
         user_name = input("What is your name? \n")
         if all(char in chars for char in user_name):
             break
-        print("I'm sorry, this name is not valid! Please use only alphabet letters. \n")
+        print("I'm sorry, this name is not valid!\
+            Please use only alphabet letters. \n")
     print("\n")
     print("Hi", user_name, "best of luck! \n")
     print("---------------------------------------------------")
@@ -64,7 +78,8 @@ def play_game(actual_word):
         # check if guess is a letter and in alphabet
         if len(user_guess) == 1 and user_guess.isalpha():
             if user_guess in user_guessed_letters:
-                print("Sorry, but you've actually already guessed this letter!", user_guess)
+                print("Sorry, but you've actually already\
+                    guessed this letter!", user_guess)
             elif user_guess not in actual_word:
                 print(user_guess, "is actually not in the word. :(")
                 user_tries -= 1  # deduct a life if users guess is wrong
@@ -74,7 +89,7 @@ def play_game(actual_word):
                 user_guessed_letters.append(user_guess)
                 guessed_word_as_list = list(word_reveal)
                 # reveal letter that user guesses at correct index
-                indexes = [i for i, letter in enumerate(actual_word) if letter == user_guess]
+                indexes = ([i for i, letter in enumerate(actual_word) if letter == user_guess])  # noqa
                 for index in indexes:
                     guessed_word_as_list[index] = user_guess
                 word_reveal = "".join(guessed_word_as_list)
@@ -104,7 +119,15 @@ def play_game(actual_word):
     if user_guessed:
         print("Nice one! You guessed the weird word =-O")
     else:
-        print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {actual_word}")
+        print(f"The man has been hung ¯\_(ツ)_/¯, \
+            the hidden word was actually {actual_word}")
+
+
+"""
+Many thanks to Kite for a great reference and example:
+https://www.youtube.com/watch?v=m4nEnsavl6w
+https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python
+"""
 
 
 def show_hangman(user_tries):
@@ -179,6 +202,13 @@ def show_hangman(user_tries):
                 """
     ]
     return status[user_tries]
+
+
+"""
+Many thanks to Kite for a great reference and example:
+https://www.youtube.com/watch?v=m4nEnsavl6w
+https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python
+"""
 
 
 def main():
