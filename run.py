@@ -43,10 +43,11 @@ def play_game(actual_word):
     print("---------------------------------------------------- ")
     print("---------------------------------------------------- \n")
     print("This is Weird Word Hangman.")
-    print("Your mission (should you wish to accept it)")
+    print("Your mission (should you wish to accept it),")
     print("is to try and guess the weird word!")
     print("Each underscore corresponds to a hidden letter.")
-    print("If you input a correct guess, it will replace the underscore.")
+    print("If you input a correct guess,")
+    print("it will replace the underscore.")
     print("You have 6 lives. Go! Don't leave the man hanging! \n")
     print("---------------------------------------------------- ")
     print("---------------------------------------------------- \n")
@@ -73,7 +74,7 @@ def play_game(actual_word):
     # games logic/ while loop
     while not user_guessed and user_tries > 0:
         # ask user for guess
-        user_guess = input("Please guess a word or letter:").upper()
+        user_guess = input("Please guess a word or letter: \n").upper()
         print("--------------------------------------------------- \n")
         # check if guess is a letter and in alphabet
         if len(user_guess) == 1 and user_guess.isalpha():
@@ -221,7 +222,7 @@ def main():
     play_game(actual_word)
 
     # while loop to check if user wants to continue or not
-    while input("Would you like to play again? (Y/N) ").upper() == "Y":
+    while input("Would you like to play again? (Y/N) \n").upper() == "Y":
         actual_word = pick_word()
         play_game(actual_word)
 
