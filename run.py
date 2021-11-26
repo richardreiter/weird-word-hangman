@@ -34,7 +34,7 @@ def play_game(actual_word):
                 indexes = [i for i, letter in enumerate(user_guess) if letter == user_guess]
                 for index in indexes:
                     guessed_word_as_list[index] = user_guess
-                    word_reveal = "".join(guessed_word_as_list)
+                word_reveal = "".join(guessed_word_as_list)
                 if "_" not in word_reveal:
                     user_guessed = True
         elif len(user_guess) == len(actual_word) and user_guess.isalpha():
@@ -49,10 +49,10 @@ def play_game(actual_word):
                 word_reveal = actual_word
         else:
             print("Sorry, this guess was invalid, please try again! :)")
-            print(show_hangman(user_tries))
-            print(word_reveal)
-            print("\n")
-    if user_guessed is True:
+        print(show_hangman(user_tries))
+        print(word_reveal)
+        print("\n")
+    if user_guessed:
         print("Nice one! You guessed the weird word =-O")
     else:
         print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {actual_word}")
