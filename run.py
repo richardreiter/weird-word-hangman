@@ -15,16 +15,28 @@ def play_game(actual_word):
     user_guessed_words = []
     user_tries = 6
     print(welcome_banner)
-    print("-------------------------------------------------- ")
-    print("-------------------------------------------------- ")
+    print("---------------------------------------------------- ")
+    print("---------------------------------------------------- \n")
     print("This is Weird Word Hangman.")
     print("Your mission (should you wish to accept it)")
     print("is to try and guess the weird word!")
     print("Each underscore corresponds to a hidden letter.")
     print("If you input a correct guess, it will replace the underscore.")
-    print("You have 6 lives. Go! Don't leave the man hanging!")
-    print("-------------------------------------------------- ")
-    print("-------------------------------------------------- ")
+    print("You have 6 lives. Go! Don't leave the man hanging! \n")
+    print("---------------------------------------------------- ")
+    print("---------------------------------------------------- \n")
+
+    chars = "abcdefghijklmnopqrstuvxwyzABCDEFGHIJKLMNOPQRSTUVXWYZ"
+    while True:
+        user_name = input("What is your name? \n")
+        if all(char in chars for char in user_name):
+            break
+        print("I'm sorry, this name is not valid! Please use only letters. \n")
+    print("\n")
+    print("Hi", user_name, "best of luck! \n")
+    print("---------------------------------------------------")
+    print("--------------------------------------------------- \n")
+
     print(show_hangman(user_tries))
     print(word_reveal)
     print("\n")
