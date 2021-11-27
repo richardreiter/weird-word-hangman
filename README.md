@@ -92,6 +92,12 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 - Choose difficulty
   - An option to give the player to choose an easier/medium/harder difficulty of the game.
 
+## Technologies Used
+
+### Language Used
+
+- [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
+
 ## Testing
 
 ### Testing User Stories from User Experience (UX) Section
