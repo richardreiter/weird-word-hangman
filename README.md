@@ -31,13 +31,59 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 - As a user, I want to know how to play the game.
 - As a user, I want to know the game's rules.
 
-### Wireframes
-
-### Design
-
 ## Features
 
 ### Existing Features
+
+- __Welcome Screen__
+
+  - This is the first screen the player sees, it welcomes the player with the game rules. 
+  - At the end of the welcome message it prompts the player to input their name.
+
+![Welcome Screen](docs/screenshots/wwh-welcome.png)
+
+- __Main Screen__
+
+  - Greets the player with their chosen name.
+  - Displays the image of the hanging man state.
+  - Shows the secret word via underscores.
+  - Prompts the user to type the guess.
+
+![Main Screen](docs/screenshots/wwh-main-screen.png)
+
+- __Correct Guess Screen__
+
+  - If the player makes a correct letter guess, the letter is revealed
+  - Feedback is provided to the user
+
+![Correct Guess Screen](docs/screenshots/wwh-correct-guess.png)
+
+- __Wrong Guess Screen__
+
+  - If the player makes a wrong letter/word guess, a life is deducted from the player and feedback is provided.
+  - The wrong letter can't be used by the player once again (meaning they won't lose another life if they try the same guess).
+
+![Wrong Guess Screen](docs/screenshots/wwh-wrong-guess.png)
+
+- __Invalid Guess Screen__
+
+  - If the player attempts to input an invalid character (such as numbers or symbols), they will be thrown a message saying the guess was not valid.
+
+![Invalid Guess Screen](docs/screenshots/wwh-invalid-guess.png)
+
+- __Winning Game Screen__
+
+  - If the player manages to guess the hidden word, they win the game!
+  - The player is provided feedback and is prompted to play another round or not.
+
+![Winning Game Screen](docs/screenshots/wwh-winning-screen.png)
+
+- __Losing Game Screen__
+
+  - If the player runs out of lives/tries before guessing the hidden word, they lose the game.
+  - The player is provided feedback and is prompted to play another round or not.
+
+![Losing Game Screen](docs/screenshots/wwh-game-over.png)
 
 ### Features Left to Implement
 
