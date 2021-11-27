@@ -152,6 +152,16 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 ## Deployment
 
+This project was deployed using Code Institute's mock terminal for Heroku:
+
+- Steps for deployment:
+  1. Fork or clone this repository.
+  2. Create a new Heroku app.
+  3. Add the Config Var: key = PORT and the value = 8000.
+  4. Set the buildbacks to Python and NodeJS in that order.
+  5. Link the Heroku app to the repository.
+  6. Click on Deploy.
+
 ## Credits 
 
 ### Content
