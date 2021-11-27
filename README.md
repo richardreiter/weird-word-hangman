@@ -117,7 +117,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
   ![PEP8online warning](docs/screenshots/wwh-pep8-warnings.png)
 
 - [PEP8online](http://pep8online.com/)
-  - The warning messages were addressed when I broke 3 of the 4 lines (making them shorter) with a backslash ("\").
+  - The warning messages were addressed when I broke 3 of the 4 lines (making them shorter) with a backslash (however that broke the code, so eventually "#noqa" was added to all the 4 lines - please refer to Fixed Bugs section below).
   - The remaining line was addressed with a "#noqa" comment. After implementing these fixes the linter validated the code with no issues.
 
   ![PEP8online validation pass](docs/screenshots/wwh-pep8-validation-pass.png)
@@ -137,9 +137,18 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
   - Brave (Version 1.32.113 Chromium: 96.0.4664.45 (Official Build) (arm64))
   - Vivaldi (4.3.2439.65 (Stable channel) (arm64))
 
-### Features Testing
+### Fixed Bugs
 
-### Bugs
+- Long lines/spacing issue.
+  - At first, 4 "E501" warnings (line too long) were returned when passing the code through the PEP8online check.
+  - 1 of the 4 lines was addressed with a "#noqa" comment, after implementing these fixes the linter validated with no issues.
+  - However, once the warning messages were addressed when I broke three of the four lines with a backslash, that caused a printing spacing issue:
+
+  ![Spacing Bug](docs/screenshots/wwh-spacing-bug.png)
+
+  - The bug was finally fixed when I removed the backslashes and just added a #noqa line comments to all 4 lines.
+  
+  ![Spacing Bug Fix](docs/screenshots/wwh-spacing-bug-fix.png)
 
 ## Deployment
 
