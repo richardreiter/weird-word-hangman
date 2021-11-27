@@ -124,6 +124,10 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 ### Device Testing
 
+- The Weird Word Hangman was tested on the following devices/environments (without any major issues):
+  - MacBook Air 13.3" M1 (macOS Big Sur 11.6)
+  - Lenovo 5i 15" i5 (Windows 10 64x)
+
 ### Browser Testing
 
 ### Features Testing
