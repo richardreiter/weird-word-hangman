@@ -18,9 +18,12 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 - Showcase a simple classic fun game.
 - Provide the user with instructions/rules on how to play the game.
-- Provide feedback to the user on each round
+- Provide feedback to the user on each round.
 
 ### Target Audience
+
+- People of all ages.
+- Anyone who wants to have a bit of fun with a guessing game.
 
 ### User Stories
 
