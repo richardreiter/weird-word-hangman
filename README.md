@@ -98,6 +98,15 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 - [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
 
+### Frameworks, Libraries & Programs Used
+
+- [Git](https://git-scm.com/) & [Gitpod](https://gitpod.io/)
+  - Git was used for version control via the Gitpod terminal in order to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used for version control.
+- [Heroku](https://heroku.com/)
+  - Heroku was used for hosting and deploying the game.
+
 ## Testing
 
 ### Testing User Stories from User Experience (UX) Section
