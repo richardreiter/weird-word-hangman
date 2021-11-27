@@ -27,6 +27,10 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 ### User Stories
 
+- As a user, I want to understand what the game is about.
+- As a user, I want to know how to play the game.
+- As a user, I want to know the game's rules.
+
 ### Wireframes
 
 ### Design
