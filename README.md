@@ -160,12 +160,21 @@ This project was deployed using Code Institute's mock terminal for Heroku:
   3. Add the Config Var: key = PORT and the value = 8000.
   4. Set the buildbacks to Python and NodeJS in that order.
   5. Link the Heroku app to the repository.
-  6. Click on Deploy.
+  6. Click on Deploy. 
 
 ## Credits 
 
-### Content
+- The website [tinypng.com](https://tinypng.com/) was used to compress the README images.
+- The list of random words was randomly generated thanks to [Random Word Generator.](https://randomwordgenerator.com/weird-word.php)
+- The "Welcome" banner's ASCII Art was generated with the [ASCII Art Generator.](https://patorjk.com/software/taag/#p=display&f=Rectangles&t=Welcome)
+- Many thanks to Anna Greaves for the [CI’s Love Sandwiches Walkthrough project](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode) for a great reference.
+- Many thanks to [Sanjin Dedic](https://www.youtube.com/watch?v=3_CX0aD9Fdg) for a great inspiration, reference and example.
+- Many thanks to [Kiteco](https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python)/[Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) for a great inspiration, reference and example.
+- [This Stack Overflow thread about "E501 line too long" PEP8 validation.](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/)
+- [Code Institute](https://codeinstitute.net/) for the deployment terminal.
 
-### Media
 
 ### Other
+
+- Many thanks to CI's Tutor Support and CI's Slack community for their support.
+- Many thanks to my mentor, Gerry McBride, for his guidance and feedback.
