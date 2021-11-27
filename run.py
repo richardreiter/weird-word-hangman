@@ -59,8 +59,7 @@ def play_game(actual_word):
         user_name = input("What is your name? \n")
         if all(char in chars for char in user_name):
             break
-        print("I'm sorry, this name is not valid!\
-            Please use only alphabet letters. \n")
+        print("I'm sorry, this name is not valid! Please use only alphabet letters. \n")  # noqa
     print("\n")
     print("Hi", user_name, "best of luck! \n")
     print("---------------------------------------------------")
@@ -79,8 +78,7 @@ def play_game(actual_word):
         # check if guess is a letter and in alphabet
         if len(user_guess) == 1 and user_guess.isalpha():
             if user_guess in user_guessed_letters:
-                print("Sorry, but you've actually already\
-                    guessed this letter!", user_guess)
+                print("Sorry, but you've actually already guessed this letter!", user_guess)  # noqa
             elif user_guess not in actual_word:
                 print(user_guess, "is actually not in the word. :(")
                 user_tries -= 1  # deduct a life if users guess is wrong
@@ -120,8 +118,7 @@ def play_game(actual_word):
     if user_guessed:
         print("Nice one! You guessed the weird word =-O")
     else:
-        print(f"The man has been hung ¯\_(ツ)_/¯, \
-            the hidden word was actually {actual_word}")
+        print(f"The man has been hung ¯\_(ツ)_/¯, the hidden word was actually {actual_word}")  # noqa
 
 
 """
