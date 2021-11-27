@@ -87,6 +87,11 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 ### Features Left to Implement
 
+- High Score System
+  - A high score system is a feature to keep in mind so the player can compete with friends/family.
+- Choose difficulty
+  - An option to give the player to choose an easier/medium/harder difficulty of the game.
+
 ## Testing
 
 ### Testing User Stories from User Experience (UX) Section
