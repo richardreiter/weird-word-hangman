@@ -31,6 +31,12 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 - As a user, I want to know how to play the game.
 - As a user, I want to know the game's rules.
 
+### Flowchart
+
+- A flowchart was done to help visualise the project.
+
+  ![Flowchart](docs/screenshots/wwh-flowchart.png)
+
 ## Features
 
 ### Existing Features
@@ -165,6 +171,7 @@ This project was deployed using Code Institute's mock terminal for Heroku:
 ## Credits 
 
 - The website [tinypng.com](https://tinypng.com/) was used to compress the README images.
+- The website [Visual Paradigm Online](https://online.visual-paradigm.com/) was used to create a flowchart.
 - The list of random words was randomly generated thanks to [Random Word Generator.](https://randomwordgenerator.com/weird-word.php)
 - The "Welcome" banner's ASCII Art was generated with the [ASCII Art Generator.](https://patorjk.com/software/taag/#p=display&f=Rectangles&t=Welcome)
 - Many thanks to Anna Greaves for the [CI’s Love Sandwiches Walkthrough project](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode) for a great reference.
