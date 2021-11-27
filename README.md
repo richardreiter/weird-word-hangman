@@ -4,7 +4,7 @@
 
 There's a hidden weird word and the player needs to guess a letter (or the whole word) in each round.
 
-The player has 6 lives, each wrong guess deducts a life from the player. If the player runs out of lives they hang the man and the player loses.
+The player has 6 lives, each wrong guess deducts a life from the player. If the player runs out of lives, they hang the man and the player loses.
 
 The player wins the game if they correctly identify all the hidden letters!
 
@@ -38,7 +38,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 - __Welcome Screen__
 
   - This is the first screen the player sees, it welcomes the player with the game rules. 
-  - At the end of the welcome message it prompts the player to input their name.
+  - At the end of the welcome message, it prompts the player to input their name.
 
 ![Welcome Screen](docs/screenshots/wwh-welcome.png)
 
@@ -88,7 +88,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 ### Features Left to Implement
 
 - High Score System
-  - A high score system is a feature to keep in mind so the player can compete with friends/family.
+  - A high score system is a feature to keep in mind, so the player can compete with friends/family.
 - Choose difficulty
   - An option to give the player to choose an easier/medium/harder difficulty of the game.
 
@@ -146,7 +146,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
   ![Spacing Bug](docs/screenshots/wwh-spacing-bug.png)
 
-  - The bug was finally fixed when I removed the backslashes and just added a #noqa line comments to all 4 lines.
+  - The bug was finally fixed when I removed the backslashes and just added #noqa line comments to all 4 lines.
   
   ![Spacing Bug Fix](docs/screenshots/wwh-spacing-bug-fix.png)
 
