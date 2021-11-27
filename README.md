@@ -124,11 +124,18 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 ### Device Testing
 
-- The Weird Word Hangman was tested on the following devices/environments (without any major issues):
+- The Weird Word Hangman was tested on the following devices/environments (without any issues):
   - MacBook Air 13.3" M1 (macOS Big Sur 11.6)
   - Lenovo 5i 15" i5 (Windows 10 64x)
 
 ### Browser Testing
+
+- The Weird Word Hangman was tested on several browsers without any issues:
+  - Google Chrome (Version 96.0.4664.55 (Official Build) (arm64))
+  - Mozilla Firefox (94.0.2 (64-bit))
+  - Safari (Version 15.0 (16612.1.29.41.4, 16612))
+  - Brave (Version 1.32.113 Chromium: 96.0.4664.45 (Official Build) (arm64))
+  - Vivaldi (4.3.2439.65 (Stable channel) (arm64))
 
 ### Features Testing
 
