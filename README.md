@@ -109,9 +109,18 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 ## Testing
 
-### Testing User Stories from User Experience (UX) Section
-
 ### Validator Testing
+
+- [PEP8online](http://pep8online.com/)
+  - At first, four "E501" warnings (line too long) were returned when passing through the PEP8online check.
+
+  ![PEP8online warning](docs/screenshots/wwh-pep8-warnings.png)
+
+- [PEP8online](http://pep8online.com/)
+  - The warning messages were addressed when I broke 3 of the 4 lines (making them shorter) with a backslash ("\").
+  - The remaining line was addressed with a "#noqa" comment. After implementing these fixes the linter validated the code with no issues.
+
+  ![PEP8online validation pass](docs/screenshots/wwh-pep8-validation-pass.png)
 
 ### Device Testing
 
