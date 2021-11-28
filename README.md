@@ -2,7 +2,7 @@
 
 [Weird Word Hangman](https://github.com/richardreiter/hangman) is a Python terminal based word guessing game, which runs on Code Institute's mock terminal on Heroku.
 
-There's a hidden weird word and the player needs to guess a letter (or the whole word) in each round.
+This game consists of a weird word that is hidden in a hang man style game. The player must guess a letter (or the whole word) in each round. 
 
 The player has 6 lives, each wrong guess deducts a life from the player. If the player runs out of lives, they hang the man and the player loses.
 
@@ -43,7 +43,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
 - __Welcome Screen__
 
-  - This is the first screen the player sees, it welcomes the player with the game rules. 
+  - This is the first screen that the player sees, it welcomes the player with the game rules. 
   - At the end of the welcome message, it prompts the player to input their name.
 
 ![Welcome Screen](docs/screenshots/wwh-welcome.png)
@@ -52,7 +52,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 
   - Greets the player with their chosen name.
   - Displays the image of the hanging man state.
-  - Shows the secret word via underscores.
+  - Shows the amount of letters in the hidden word via underscores. Each underscore represents one letter.
   - Prompts the user to type the guess.
 
 ![Main Screen](docs/screenshots/wwh-main-screen.png)
@@ -87,7 +87,7 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 - __Losing Game Screen__
 
   - If the player runs out of lives/tries before guessing the hidden word, they lose the game.
-  - The player is provided feedback and is prompted to play another round or not.
+  - The player is provided feedback and is prompted to play another round.
 
 ![Losing Game Screen](docs/screenshots/wwh-game-over.png)
 
