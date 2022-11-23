@@ -1,6 +1,6 @@
 # WEIRD WORD HANGMAN
 
-[Weird Word Hangman](https://github.com/richardreiter/hangman) is a Python terminal based word guessing game, which runs on Code Institute's mock terminal on Heroku.
+[Weird Word Hangman](https://github.com/richardreiter/hangman) is a Python terminal based word guessing game, which runs on Code Institute's mock terminal on Render (formerly on Heroku).
 
 This game consists of a weird word that is hidden in a hang man style game. The player must guess a letter (or the whole word) in each round. 
 
@@ -10,7 +10,7 @@ The player wins the game if they correctly identify all the hidden letters!
 
 ![Responsive Weird Word Hangman](docs/screenshots/wwh-responsiveness.png)
 
-Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
+Visit the live project [here.](https://weird-word-hangman.onrender.com/)
 
 ## UX (User Experience)
 
@@ -111,7 +111,9 @@ Visit the live project [here.](https://weird-word-hangman.herokuapp.com/)
 - [GitHub](https://github.com/)
   - GitHub was used for version control.
 - [Heroku](https://heroku.com/)
-  - Heroku was used for hosting and deploying the game.
+  - Heroku was used originally for hosting and deploying the game.
+- [Render](https://render.com/)
+  - The project was then migrated from Heroku to Render.
 
 ## Testing
 
